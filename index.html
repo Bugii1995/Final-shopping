@@ -1,0 +1,150 @@
+<!doctype html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" integrity="sha512-9usAa10IRO0HhonpyAIVpjrylPvoDwiPUiKdWk5t3PyolY1cOd4DSE0Ga+ri4AuTroPR5aQvXU9xC6qOPnzFeg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script src="//cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+  <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+  <div class="realtive min-h-screen md:flex">
+      <!--Modal add-->
+    <div class="modal-container">
+        <div class="mx-auto sm:w-3/4 md:w-2/4 fixed inset-x-0 top-64 flex justify-center items-center text-white modal z-10" id="modal">
+            <div class="container flex flex-col gap-4 bg-gray-800 p-12 rounded-2xl content-center items-center max-w-xl">
+                <!--add-->
+                <div class="stuff1 flex flex-col p-4 gap-4">
+                    <div class="font-bold text-4xl">Post add</div>
+                    <div>Please fill out this forum to post add</div>
+
+                    <label for="username">Your title</label>
+                    <input class="p-2 rounded-2xl text-blue-900" type="text" placeholder="title" name="title" id="title" required>
+
+                    <label for="username">Your price</label>
+                    <input class="p-2 rounded-2xl text-blue-900" type="number" placeholder="price" name="price" id="price" required>
+
+                    <label for="username">Your discription</label>
+                    <input class="p-2 rounded-2xl text-blue-900" type="text" placeholder="discription" name="discription" id="discription" required>
+                    <label for="username">Your picture</label>
+                    <input class="p-2 rounded-2xl text-blue-900" type="text" placeholder="picture" name="picture" id="picture" required>
+
+                    <div>Category</div>
+
+                    <div class="flex flex-row gap-3 items-center">
+                        <input id="shoes" value="shoes" type="checkbox"><div>Shoes</div>
+                    </div>
+                    <div class="flex flex-row gap-3 items-center">
+                        <input id="tees" value="tees" chec type="checkbox"><div>Tees</div>
+                    </div>
+                    <div class="flex flex-row gap-3 items-center">
+                        <input id="hats" value="hats" type="checkbox"><div>Hats</div>
+                    </div>
+                    <div class="flex flex-row gap-3 items-center">
+                        <input id="pants" value="pants" type="checkbox"><div>Pants</div>
+                    </div>
+                    <div class="flex flex-row gap-3 items-center">
+                        <input id="other" value="other" type="checkbox"><div>Other</div>
+                    </div>
+
+                    <div class="flex flex-row justify-between">
+                    <button class="p-2 w-64 rounded-2xl bg-gray-600 hover:bg-gray-900 hover:text-white border-2 duration-150 " type="button" id="post">Post</button>
+                    <button class="p-2 w-64 rounded-2xl bg-gray-600 hover:bg-gray-900 hover:text-white border-2 duration-150 " type="button" id="cancel">Cancel</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+        <div class="mx-auto sm:w-3/4 md:w-2/4 fixed inset-x-0 top-64 flex justify-center items-center text-white modal1 z-10" id="modal">
+            <div class="container flex flex-col gap-4 bg-gray-800 p-12 rounded-2xl content-center items-center max-w-xl">
+                <svg class="h-10 w-10 fixed right-5 top-3" id="cancel1"  xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" viewBox="0 0 20 20" fill="currentColor">
+                    <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zM8.707 7.293a1 1 0 00-1.414 1.414L8.586 10l-1.293 1.293a1 1 0 101.414 1.414L10 11.414l1.293 1.293a1 1 0 001.414-1.414L11.414 10l1.293-1.293a1 1 0 00-1.414-1.414L10 8.586 8.707 7.293z" clip-rule="evenodd" />
+                  </svg>
+
+                
+                <!--registration-->
+                <div class="stuff1 flex flex-col p-4 gap-4">
+                    <div class="font-bold text-4xl">Register</div>
+                    <div>Please fill out this forum to register</div>
+
+                    <label for="username">Your username</label>
+                    <input class="p-2 rounded-2xl text-blue-900" type="text" placeholder="Name" name="usename" id="username" required>
+
+                    <label for="email">Your email</label>
+                    <input class="p-2 rounded-2xl text-blue-900" type='text' placeholder="Email" name="email" id="email" required>
+
+                    <label for="number">Phone number</label>
+                    <input class="p-2 rounded-2xl text-blue-900" type='number' placeholder="Phone number" name="number" id="number" required>
+
+
+                    <label for="password">Password</label>
+                    <input class="p-2 rounded-2xl text-blue-900" type="password" placeholder="Password" name="password" id="password" required>
+    
+                    <label for="password">Retype Password</label>
+                    <input class="p-2 rounded-2xl text-blue-900" type="password" placeholder="Password" name="password" id="password" required>
+    
+
+                    <div class="flex flex-row gap-16">
+                    <button class="p-2 w-42 rounded-2xl bg-gray-600 hover:bg-gray-900 hover:text-white border-2 duration-150 " type="button" class="btn" id="#btn">Register</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div><!--Modal ends here-->
+    <!--cart-->
+   
+
+
+
+  
+      
+
+    <!--Mobile menu-->
+    <div class="bg-gray-800 text-gray-100 text-white flex justify-between md:hidden">
+        <!--Logo-->
+       <a href="#" class="block p-4 font-bold">Second Brand</a>
+       <!--Menu-->
+       <button class="p-4 focus:outline-none focus:bg-gray-700 mobile-menu">
+        <svg class="e-5 h-5" xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16" />
+          </svg>
+       </button>
+   </div>
+
+        <div class="sidebar bg-gray-700 text-blue-100 w-64 space-y-6 py-7 px-2 absolute inset-y-0 left-0 transform -translate-x-full md:relative md:translate-x-0 transition duration-200 ease-in-out"> <!--sidebar-->
+            <a class="flex text-white items-center space-x-2 p-4" href="#">
+                <svg class="h-8 w-8" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 384 512"><!--! Font Awesome Pro 6.0.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2022 Fonticons, Inc. --><path d="M336 0h-288C21.49 0 0 21.49 0 48v431.9c0 24.7 26.79 40.08 48.12 27.64L192 423.6l143.9 83.93C357.2 519.1 384 504.6 384 479.9V48C384 21.49 362.5 0 336 0zM336 452L192 368l-144 84V54C48 50.63 50.63 48 53.1 48h276C333.4 48 336 50.63 336 54V452z"/></svg>
+                <span class="text-2xl font-bold">Second Brand</span>
+            </a>
+            <nav>
+                <a class="text-yellow-500 block py-2 px-4 hover:bg-blue-700 rounded hover:text-white trasition duration-200 btnLogin"  href="#">Login</a>
+                <hr>
+                
+                <a id="basket" class="block  py-2 px-4 hover:bg-blue-700 rounded hover:text-white trasition duration-200" href="#">Cart </a>
+                <a class="block py-2 px-4 hover:bg-blue-700 rounded hover:text-white trasition duration-200" id="add" href="#">Post add </a>
+                <hr>
+                <a class="block text-2xl font-bold py-2 px-4" href="#">Categories</a>
+                <a class="block py-2 px-4 hover:bg-blue-700 rounded hover:text-white trasition duration-200" href="#" id="all">All</a>
+                <a class="block shoeBtn py-2 px-4 hover:bg-blue-700 rounded hover:text-white trasition duration-200" href="#">Shoes</a>
+                <a class="block teesBtn py-2 px-4 hover:bg-blue-700 rounded hover:text-white trasition duration-200" href="#">Tees</a>
+                <a class="hatsBtn block py-2 px-4 hover:bg-blue-700 rounded hover:text-white trasition duration-200" href="#">Hats</a>
+                <a class="pantsBtn block py-2 px-4 hover:bg-blue-700 rounded hover:text-white trasition duration-200" href="#">Pants</a>
+                <a class="otherBtn block py-2 px-4 hover:bg-blue-700 rounded hover:text-white trasition duration-200" href="#">Other</a>
+                <hr>
+                <a id="regbtn" class="block text-red-500 py-2 px-4 hover:bg-blue-700 rounded hover:text-white trasition duration-200 btnLogin"  href="#">Register</a>
+                <a class="block py-2 px-4 hover:bg-blue-700 rounded hover:text-white trasition duration-200" href="#">About</a>
+            </nav>
+      </div>
+      <!--content-->
+      <div class=" flex-1 p-10 text-2xl font-bold">
+        <div class="content max-w-screen-xl m-auto grid xl:grid-cols-4 lg:grid-cols-3 md:grid-cols-2 grid-cols-1">
+            <!--cards-->
+     
+  </div>
+
+  <script src="./script.js"></script>
+  <script type='module' src="./registration.js"></script>
+</body>
+</html>

@@ -1,0 +1,28 @@
+
+.modal {
+    transform:  scale(0);
+    transition: 200ms ease-in-out;
+}
+.modal.active {
+    transform:  scale(1);
+}
+
+.modal1 {
+    transform:  scale(0);
+    transition: 200ms ease-in-out;
+}
+.modal1.active {
+    transform:  scale(1);
+}
+.h-mine {
+    height: 400px;
+}
+
+
+.modal2 {
+    transform:  scale(0);
+    transition: 200ms ease-in-out;
+}
+.modal2.active {
+    transform:  scale(1);
+}
